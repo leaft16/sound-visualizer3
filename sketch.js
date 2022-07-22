@@ -3,7 +3,7 @@ var mic
 var fft
 var rot = 0
 var extra = 0
-var bgvid = document.getElementById("bgvid");
+//var bgvid = document.getElementById("bgvid");
 
 function preload() {
   //song = loadSound('improv39_master2.mp3')
@@ -12,13 +12,13 @@ function preload() {
 
 function setup() {
   var myCanvas = createCanvas(windowWidth, windowHeight, WEBGL)
-  myCanvas.parent("fundo")
+  //myCanvas.parent("fundo")
   angleMode(DEGREES)
   mic = new p5.AudioIn()
   mic.start()
   fft = new p5.FFT()
   fft.setInput(mic)
-  bgvid.play()
+  //bgvid.play()
   //noLoop()
 }
 
